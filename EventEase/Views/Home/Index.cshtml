@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+ 
+    <style>
+        /* Apply styles only to the Index page */
+        body {
+            background-color: black; /* Light grey background */
+            color: white; /* Dark text color */
+        }
+
+        h1 {
+            color: #0056b3; /* Blue color for headers */
+        }
+
+        p {
+            color: #666666; /* Lighter grey for paragraphs */
+        }
+
+        /* Custom styling for specific elements on the Index page */
+        .welcome-banner {
+            background-color: #4CAF50; /* Green background for the welcome banner */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+
+<h1 class="display-4">Welcome to EventEase</h1>
+<p class="lead">Your all-in-one platform for booking venues and managing events with ease.</p>
+
+
+<div class="mt-4">
+    <a class="btn btn-primary btn-lg" asp-controller="Venues" asp-action="Index">View Venues</a>
+    <a class="btn btn-secondary btn-lg" asp-controller="Events" asp-action="Index">Browse Events</a>
+    <a class="btn btn-secondary btn-lg" asp-controller="Bookings" asp-action="Index">Bookings</a>
+</div>
+
+
+
+
+
+
+
